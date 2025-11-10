@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0ea5e9"/>
+  <g transform="translate(120,70)">
+    <rect x="0" y="0" width="400" height="220" rx="12" fill="#fff" opacity="0.95"/>
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="160" height="60" rx="8" fill="#e2e8f0"/>
+      <rect x="192" y="0" width="160" height="60" rx="8" fill="#e2e8f0"/>
+      <rect x="0" y="84" width="160" height="60" rx="8" fill="#e2e8f0"/>
+      <rect x="192" y="84" width="160" height="60" rx="8" fill="#e2e8f0"/>
+    </g>
+    <text x="200" y="200" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#111">Worker Node</text>
+  </g>
+</svg>

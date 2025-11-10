@@ -65,9 +65,12 @@
 .team-card .card-img-top {
   height: 220px;
   object-fit: cover;
+  object-position: 50% 20%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+/* Fine-tune focal point for portraits */
+.img-face-center { object-position: 50% 20%; }
 @media (min-width: 992px) {
   .team-card .card-img-top { height: 260px; }
 }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#22c55e"/>
+  <g stroke="#fff" stroke-width="3" opacity="0.95">
+    <circle cx="320" cy="100" r="24" fill="#fff"/>
+    <circle cx="200" cy="220" r="24" fill="#fff"/>
+    <circle cx="440" cy="220" r="24" fill="#fff"/>
+    <line x1="320" y1="124" x2="200" y2="196"/>
+    <line x1="320" y1="124" x2="440" y2="196"/>
+    <line x1="200" y1="220" x2="440" y2="220"/>
+  </g>
+  <text x="320" y="330" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#fff">Networking</text>
+</svg>

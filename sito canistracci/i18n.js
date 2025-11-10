@@ -28,6 +28,19 @@
       'card.example': 'Some example text.',
       'card.seeProfile': 'See Profile',
       'team.title': 'Our Team',
+      // showcase.html (cluster rail)
+      'showcase.cluster.title': 'Cluster Project',
+      'showcase.cluster.cta': 'Learn more',
+      'showcase.cluster.cp.title': 'Control Plane',
+      'showcase.cluster.cp.desc': 'Manages cluster state, schedules pods, and coordinates nodes.',
+      'showcase.cluster.worker.title': 'Worker Node',
+      'showcase.cluster.worker.desc': 'Runs workloads (pods/containers) and reports status.',
+      'showcase.cluster.storage.title': 'Storage',
+      'showcase.cluster.storage.desc': 'Persistent volumes and storage classes for durable data.',
+      'showcase.cluster.network.title': 'Networking',
+      'showcase.cluster.network.desc': 'CNI, ingress, and load balancing to expose services.',
+      'showcase.cluster.monitoring.title': 'Monitoring',
+      'showcase.cluster.monitoring.desc': 'Metrics, logs, and alerting to keep the cluster healthy.',
       // team.html
       'team.header.title': 'Meet Our Team',
       'team.header.subtitle': 'We are the people behind Jack Project: a passionate group with a big heart and a shared vision.',
@@ -35,7 +48,7 @@
       'team.about.p': 'We are a group of students and technology enthusiasts collaborating to create simple, robust and useful solutions. We combine design, development and curiosity to turn ideas into real projects.',
       'team.grid.title': 'Our team',
       'team.role.productFrontend': 'Product & Frontend',
-      'team.desc.productFrontend': 'Leads UX/UI and rapid prototyping, caring for visual details.',
+      'team.desc.productFrontend': 'Cloud migration of a web server, taking care of visual details.',
       'team.role.backendApi': 'Backend & API',
       'team.desc.backendApi': 'Simple, scalable architectures with a focus on integrations and performance.',
       'team.role.fullstack': 'Full‑stack',
@@ -101,6 +114,19 @@
       'sections.runAnywhere.desc': 'Che tu preferisca la semplicità dei servizi cloud gestiti o il controllo di cluster on‑premise, Jack si adatta senza problemi. Ecco come portare il tuo codice in produzione in diversi ecosistemi:',
 
       'cloud.googleRun': 'Google Cloud Run',
+      // showcase.html (cluster rail)
+      'showcase.cluster.title': 'Progetto Cluster',
+      'showcase.cluster.cta': 'Scopri di più',
+      'showcase.cluster.cp.title': 'Piano di controllo',
+      'showcase.cluster.cp.desc': 'Gestisce lo stato del cluster, pianifica i pod e coordina i nodi.',
+      'showcase.cluster.worker.title': 'Nodo worker',
+      'showcase.cluster.worker.desc': 'Esegue i carichi di lavoro (pod/container) e riporta lo stato.',
+      'showcase.cluster.storage.title': 'Storage',
+      'showcase.cluster.storage.desc': 'Volumi persistenti e classi di storage per dati durevoli.',
+      'showcase.cluster.network.title': 'Rete',
+      'showcase.cluster.network.desc': 'CNI, ingress e bilanciamento per esporre i servizi.',
+      'showcase.cluster.monitoring.title': 'Monitoraggio',
+      'showcase.cluster.monitoring.desc': 'Metriche, log e alerting per mantenere il cluster sano.',
       // team.html
       'team.header.title': 'Incontra il Nostro Team',
       'team.header.subtitle': 'Siamo le persone dietro Jack Project: un gruppo appassionato con un cuore grande e una visione condivisa.',
@@ -108,7 +134,7 @@
       'team.about.p': 'Siamo un gruppo di studenti e appassionati di tecnologia che collaborano per creare soluzioni semplici, robuste e utili. Uniamo design, sviluppo e curiosità per trasformare idee in progetti reali.',
       'team.grid.title': 'Il nostro team',
       'team.role.productFrontend': 'Product & Frontend',
-      'team.desc.productFrontend': 'Guida UX/UI e prototipazione rapida, cura i dettagli visivi.',
+      'team.desc.productFrontend': 'Migrazione di un web-server sul cloud, cura i dettagli visivi.',
       'team.role.backendApi': 'Backend & API',
       'team.desc.backendApi': 'Architetture semplici e scalabili, focus su integrazioni e performance.',
       'team.role.fullstack': 'Full‑stack',
@@ -236,4 +262,3 @@
     setLanguage(saved || browserDefault);
   });
 })();
-

@@ -1,19 +1,4 @@
-h1 {
-  color: lightblue;
-  text-align: center;
-  font-family: aptos, sans-serif;
-}
-
-h2 {
-  color: lightgreen;
-  font-family: aptos, sans-serif;
-  margin-bottom: 15px;
-}
-
-h3 {
-  color: plum;
-  font-family: aptos, sans-serif;
-}
+/* Scoped heading styles to avoid leaking into other pages */
 
 p {
   font-family: calibri,Tahoma, Geneva, Verdana, sans-serif;
@@ -97,4 +82,7 @@ li {
         width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: .5rem; cursor: zoom-in;
       }
       /* Optional: dark modal background already applied inline, keep spacing tidy */
-      .modal-content.bg-black { background-color: #000 !important; }
+.modal-content.bg-black { background-color: #000 !important; }
+
+/* Navbar: unify font and spacing across pages */
+/* Navbar styles moved to base.css to keep a single source of truth */

@@ -1,12 +1,57 @@
 /* Page-specific styles for showcase.html */
-:root { --accent: #0d6efd; }
+:root {
+  --accent: #0d6efd;
+  --ink-900: #212529;
+  --ink-700: #343a40;
+  --ink-600: #6c757d;
+  --bg-50: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(2, 6, 23, 0.18);
+}
+/* Base layout & typography tweaks */
+.content p { line-height: 1.8; color: var(--ink-900); }
+.content .h3 { color: var(--ink-700); }
 
 .hero {
-  background: linear-gradient(180deg, rgba(13,110,253,0.9), rgba(13,110,253,0.7));
+  /* Blue gradient background */
+  background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 55%, #1d4ed8 100%);
   color: #fff;
 }
-
+.hero .display-5 { font-weight: 700; letter-spacing: .2px; }
 .hero .lead { color: #eef4ff; }
 
-.section-title { font-weight: 700; }
+/* Section title style provided by base.css */
+/* Card polish for this page */
+.team-card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(0,0,0,0.12);
+}
+/* Hide any stray header placeholder line if present */
+/* (intentionally blank) */
 
+
+/* Uniform card image sizing for showcase rail */
+.team-card .card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+@media (min-width: 992px) {
+  .team-card .card-img-top { height: 220px; }
+}
+
+/* Navbar sizing lives in home.css (shared) */
+/* Smooth horizontal scroll for the cluster rail */
+.row.flex-nowrap.overflow-auto { scroll-snap-type: x mandatory; gap: 1.25rem !important; padding-bottom: .25rem; }
+.row.flex-nowrap.overflow-auto > .col-auto { scroll-snap-align: start; }
+/* Page-specific CSS kept focused on showcase elements. */

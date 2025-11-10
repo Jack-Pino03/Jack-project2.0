@@ -1,0 +1,37 @@
+/* Base styles shared across pages */
+
+:root {
+  --accent: #0d6efd;
+  --ink-900: #212529;
+  --ink-700: #343a40;
+  --ink-600: #6c757d;
+  --bg-50: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(2, 6, 23, 0.18);
+}
+
+/* Navbar: unified font and spacing */
+.navbar { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.navbar .navbar-brand { font-size: 1.25rem; font-weight: 600; letter-spacing: 0.2px; }
+.navbar .nav-link { padding: 0.5rem 0.75rem; font-size: 0.95rem; }
+@media (min-width: 992px) {
+  .navbar { padding-top: 0.6rem; padding-bottom: 0.6rem; }
+}
+
+/* Section heading utility */
+.section-title { font-weight: 700; }
+
+/* Card base styling */
+.team-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
