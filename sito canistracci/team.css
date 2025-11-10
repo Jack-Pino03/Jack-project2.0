@@ -8,22 +8,47 @@
   --bg-50: #f8f9fa;
   --card-bg: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
+
+  /* Hero palette */
+  --hero-start: #ff7e5f; /* brand-hero start */
+  --hero-end: #feb47b;   /* brand-hero end */
+  --hero-text: #ffffff;
+  --hero-subtle: rgba(255, 255, 255, 0.72);
+
+  /* Effects */
+  --shadow-lg: 0 16px 40px rgba(2, 6, 23, 0.18);
 }
 
 /* Base layout & typography tweaks */
 .content p { line-height: 1.8; color: var(--ink-900); }
 .content .h3 { color: var(--ink-700); }
 
-/* Header accent */
-header h1.display-6::after {
+/* Hero header */
+.header-hero {
+  background:
+    radial-gradient(80% 120% at 100% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(135deg, var(--hero-start) 0%, var(--hero-end) 100%);
+  color: var(--hero-text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.header-hero h1 { color: var(--hero-text); font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif; }
+.header-hero .lead { color: var(--hero-subtle) !important; }
+.header-hero h1::after {
   content: "";
   display: block;
-  width: 56px;
+  width: 64px;
   height: 3px;
   background: var(--brand);
   border-radius: 2px;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
+  opacity: 0.95;
 }
+@media (min-width: 992px) {
+  .header-hero { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+}
+
+/* Hide any stray header placeholder line if present */
+.header-hero .h1.mb-3 { display: none !important; }
 
 /* Team cards */
 .team-card {
@@ -34,7 +59,7 @@ header h1.display-6::after {
 }
 .team-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
   border-color: rgba(0, 0, 0, 0.12);
 }
 .team-card .card-img-top {
@@ -58,7 +83,7 @@ header h1.display-6::after {
 
 /* Values list */
 .content section ul { padding-left: 1.1rem; }
-.content section ul li { margin-bottom: 0.5rem; }
+.content section ul li { margin-bottom: 0.5rem; color: black; }
 
 /* Storytelling styles */
 .story {
@@ -144,4 +169,3 @@ header h1.display-6::after {
 
 /* Utilities */
 .accent { color: var(--brand) !important; }
-
