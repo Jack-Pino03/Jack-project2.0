@@ -63,16 +63,17 @@
   border-color: rgba(0, 0, 0, 0.12);
 }
 .team-card .card-img-top {
-  height: 220px;
-  object-fit: cover;
-  object-position: 50% 20%;
+  height: 120px; /* ~50% vs precedente */
+  object-fit: contain; /* mostra tutto il volto/immagine */
+  object-position: center;
+  background: var(--bg-50);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-/* Fine-tune focal point for portraits */
-.img-face-center { object-position: 50% 20%; }
+/* Ensure centered placement when using the helper */
+.img-face-center { object-position: center !important; }
 @media (min-width: 992px) {
-  .team-card .card-img-top { height: 260px; }
+  .team-card .card-img-top { height: 160px; }
 }
 .team-card .card-title {
   color: var(--brand) !important;
