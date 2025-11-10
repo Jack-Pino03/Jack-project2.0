@@ -28,6 +28,27 @@
       'card.example': 'Some example text.',
       'card.seeProfile': 'See Profile',
       'team.title': 'Our Team',
+      // team.html
+      'team.header.title': 'Meet Our Team',
+      'team.header.subtitle': 'We are the people behind Jack Project: a passionate group with a big heart and a shared vision.',
+      'team.about.title': 'Who we are',
+      'team.about.p': 'We are a group of students and technology enthusiasts collaborating to create simple, robust and useful solutions. We combine design, development and curiosity to turn ideas into real projects.',
+      'team.grid.title': 'Our team',
+      'team.role.productFrontend': 'Product & Frontend',
+      'team.desc.productFrontend': 'Leads UX/UI and rapid prototyping, caring for visual details.',
+      'team.role.backendApi': 'Backend & API',
+      'team.desc.backendApi': 'Simple, scalable architectures with a focus on integrations and performance.',
+      'team.role.fullstack': 'Full‑stack',
+      'team.desc.fullstack': 'Bridges front and back, managing end‑to‑end flows.',
+      'team.role.devops': 'DevOps',
+      'team.desc.devops': 'Automation, CI/CD and environments: from idea to continuous deploy.',
+      'team.role.designQa': 'Design & QA',
+      'team.desc.designQa': 'Consistent user experience and functional testing for reliable quality.',
+      'team.values.title': 'Our values',
+      'team.values.clarity': 'Clarity before complexity.',
+      'team.values.steps': 'Small steps, frequent results.',
+      'team.values.accessibility': 'Accessibility and performance for everyone.',
+      'team.values.collaboration': 'Open collaboration and continuous feedback.',
       // home.html specific
       'navbar.brand': 'Jack Project',
       'nav.home': 'Home',
@@ -35,6 +56,7 @@
       'nav.services': 'Services',
       'nav.contact': 'Contact',
       'nav.showcase': 'Showcase',
+      'nav.team': 'Team',
       // contact.html
       'contact.title': 'Contact Us',
       'contact.subtitle': 'Have a question? Send us a message and we’ll reply soon.',
@@ -68,7 +90,8 @@
       'home.arch.database': 'Database — MongoDB for flexible storage.',
       'home.arch.cloud': 'Cloud — AWS for secure infrastructure.',
       'home.footer.backToTop': 'Back to top',
-      'home.footer.copyright': '© 2025 My Web Server'
+      'home.footer.copyright': '\u00A9 2025 My Web Server',
+      'team.pageTitle': 'Our Team — Jack Project'
     },
     it: {
       'hero.title': 'Benvenuti nel Jack Project',
@@ -78,6 +101,27 @@
       'sections.runAnywhere.desc': 'Che tu preferisca la semplicità dei servizi cloud gestiti o il controllo di cluster on‑premise, Jack si adatta senza problemi. Ecco come portare il tuo codice in produzione in diversi ecosistemi:',
 
       'cloud.googleRun': 'Google Cloud Run',
+      // team.html
+      'team.header.title': 'Incontra il Nostro Team',
+      'team.header.subtitle': 'Siamo le persone dietro Jack Project: un gruppo appassionato con un cuore grande e una visione condivisa.',
+      'team.about.title': 'Chi siamo',
+      'team.about.p': 'Siamo un gruppo di studenti e appassionati di tecnologia che collaborano per creare soluzioni semplici, robuste e utili. Uniamo design, sviluppo e curiosità per trasformare idee in progetti reali.',
+      'team.grid.title': 'Il nostro team',
+      'team.role.productFrontend': 'Product & Frontend',
+      'team.desc.productFrontend': 'Guida UX/UI e prototipazione rapida, cura i dettagli visivi.',
+      'team.role.backendApi': 'Backend & API',
+      'team.desc.backendApi': 'Architetture semplici e scalabili, focus su integrazioni e performance.',
+      'team.role.fullstack': 'Full‑stack',
+      'team.desc.fullstack': 'Collega front e back, si occupa dei flussi end‑to‑end.',
+      'team.role.devops': 'DevOps',
+      'team.desc.devops': 'Automazione, CI/CD e ambienti: dall’idea al deploy continuo.',
+      'team.role.designQa': 'Design & QA',
+      'team.desc.designQa': 'Esperienza d’uso coerente e test funzionali per qualità costante.',
+      'team.values.title': 'I nostri valori',
+      'team.values.clarity': 'Chiarezza prima della complessità.',
+      'team.values.steps': 'Piccoli passi, risultati frequenti.',
+      'team.values.accessibility': 'Accessibilità e performance per tutti.',
+      'team.values.collaboration': 'Collaborazione aperta e feedback continui.',
       'cloud.googleRun.desc': 'Distribuisci i tuoi microservizi basati su Jack in modo semplice con Google Cloud Run. Progettato per semplicità e scalabilità, Cloud Run gestisce automaticamente i picchi di traffico, mantiene i servizi containerizzati e stateless e si integra nativamente con Cloud Build, Artifact Registry e Cloud Monitoring. Ti basta pubblicare l’immagine Docker — Google fa il resto.',
 
       'cloud.proxmox': 'Proxmox VE',
@@ -104,6 +148,7 @@
       'nav.services': 'Servizi',
       'nav.contact': 'Contatti',
       'nav.showcase': 'Vetrina',
+      'nav.team': 'Team',
       // contact.html
       'contact.title': 'Contattaci',
       'contact.subtitle': 'Hai domande? Inviaci un messaggio e ti risponderemo al più presto.',
@@ -137,7 +182,8 @@
       'home.arch.database': 'Database — MongoDB per archiviazione flessibile.',
       'home.arch.cloud': 'Cloud — AWS per infrastruttura sicura.',
       'home.footer.backToTop': 'Torna su',
-      'home.footer.copyright': '© 2025 Il mio Web Server'
+      'home.footer.copyright': '\u00A9 2025 My Web Server',
+      'team.pageTitle': 'Il Team — Jack Project'
     }
   };
 
@@ -190,3 +236,4 @@
     setLanguage(saved || browserDefault);
   });
 })();
+
