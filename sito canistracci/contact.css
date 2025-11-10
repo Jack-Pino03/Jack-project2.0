@@ -1,0 +1,147 @@
+/* Contact page styles — Jack Project */
+
+:root {
+  --brand: #ff8c1a; /* orange accent */
+  --ink-900: #212529;
+  --ink-700: #343a40;
+  --ink-600: #6c757d;
+  --bg-50: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+/* Base layout & typography tweaks */
+.content p { line-height: 1.8; color: var(--ink-900); }
+.content .h3 { color: var(--ink-700); }
+
+/* Header accent */
+header h1.display-6::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--brand);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+}
+
+/* Team cards */
+.team-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  background: var(--card-bg);
+}
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+.team-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+@media (min-width: 992px) {
+  .team-card .card-img-top { height: 260px; }
+}
+.team-card .card-title {
+  color: var(--brand) !important;
+  margin-bottom: 0.25rem;
+}
+.team-card .text-secondary { color: var(--ink-600) !important; }
+.team-card:focus-within {
+  outline: 3px solid rgba(255, 140, 26, 0.35);
+  outline-offset: 2px;
+}
+
+/* Values list */
+.content section ul { padding-left: 1.1rem; }
+.content section ul li { margin-bottom: 0.5rem; }
+
+/* Storytelling styles */
+.story {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ink-900);
+}
+.story-lead {
+  font-size: 1.25rem;
+  color: var(--ink-600);
+}
+.story-dropcap:first-letter {
+  float: left;
+  font-size: 3.2rem;
+  line-height: 1;
+  padding-right: 0.35rem;
+  color: var(--brand);
+  font-weight: 700;
+}
+.story-block {
+  border-left: 3px solid var(--brand);
+  background: rgba(255, 140, 26, 0.05);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+}
+
+/* Timeline (Our Story) */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding-left: 0;
+  list-style: none;
+  max-width: 860px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+.milestone {
+  position: relative;
+  margin: 0 0 2rem 0;
+  padding-left: 56px;
+}
+.milestone::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0.25rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-50);
+  border: 3px solid var(--brand);
+  box-shadow: 0 0 0 4px #fff;
+}
+.milestone-year {
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 0.25rem;
+}
+.milestone-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+@media (min-width: 992px) {
+  .timeline { padding-left: 0; }
+  .timeline::before { left: 50%; transform: translateX(-1px); }
+  .milestone { width: 50%; padding-left: 0; }
+  .milestone:nth-child(odd) { padding-right: 3rem; text-align: right; }
+  .milestone:nth-child(even) { margin-left: auto; padding-left: 3rem; }
+  .milestone::before { left: calc(50% - 8px); }
+}
+
+/* Utilities */
+.accent { color: var(--brand) !important; }
+
